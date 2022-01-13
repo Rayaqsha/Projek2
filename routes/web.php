@@ -5,7 +5,10 @@ use App\Http\Controllers\HelloController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\TodoController;
+use App\Http\Controllers\ShopController;
+use App\Http\Controllers\StoreController;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\BookingController;
 
 
 /*
@@ -43,3 +46,7 @@ Route::post('/register', [RegisterController::class, 'store'])->name('register.s
 Route::get('/logout', [LogoutController::class, 'index'])->name('logout');
 
 Route::get('/shop', [ShopController::class, 'index'])->name('shop');
+Route::get('/store', [StoreController::class, 'index'])->name('store');
+Route::get('/news', [NewsController::class, 'index'])->name('news');
+
+Route::get('/booking', [BookingController::class, 'index'])->name('booking');

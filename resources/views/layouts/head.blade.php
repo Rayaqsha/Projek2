@@ -11,6 +11,8 @@
 
 <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
 
+<link href="{{ asset('/css/shop.css') }}" rel="stylesheet">
+
 <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
 <title>Booked @yield('title')</title>

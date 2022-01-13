@@ -15,10 +15,10 @@
                 <a class="nav-link js-scroll-trigger" href="shop.html">Reservation</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="shop.html">Shop</a>
+                <a class="nav-link js-scroll-trigger" href="/shop">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="news.html">News</a>
+                <a class="nav-link js-scroll-trigger" href="/news">News</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#aboutus">About Us</a>

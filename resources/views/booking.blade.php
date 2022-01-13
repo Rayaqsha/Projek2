@@ -46,80 +46,122 @@
       <br> <br>
       <!-- nav shop -->
 
-    <!-- slider -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/poster1.webp" class="d-block w-100" alt="...">
-            <a class="stretched-link" href="store.html"></a>
-          </div>
-          
-          <div class="carousel-item">
-            <img src="img/poster2.webp" class="d-block w-100" alt="...">
-            <a class="stretched-link" href="store.html"></a>
-          </div>
+      
+      <!-- fields form  -->
 
-          <div class="carousel-item">
-            <img src="img/poster3.webp" class="d-block w-100" alt="...">
-            <a class="stretched-link" href="store.html"></a>
-          </div>
-
-        </div>
-      </div>
-      <!-- end slider -->
-
-    <!-- shop by category  -->
-    <div class="sc container">
-        <div class="col">
-            <h2 class="text-start fs-3">Shop by Category</h2>
-        </div>
-
-        <!--image row start-->
-        <div class="sc1 row">
-
-          <div class="image align">
-            <img src="img/men.png" alt="">
-            <div class="details">
-              <h2>MEN</h2>
-              <a href="#" class="btn btn-dark btn-m">EXPLORE</a>
+      <div class="container">
+      <div class="row mt-5 mb-5">
+            <div class="col">
+                <img src="img/store/tas.png" alt="" class="rounded img-fluid w-100">
             </div>
-          </div>
+            <div class="col">
+                <div class="cardbook">
+                <div class="card-body">
+                <div class="container">
 
-          <div class="image">
-            <img src="img/woman.png" alt="">
-            <div class="details">
-              <h2>WOMAN</h2>
-              <a href="#" class="btn btn-dark btn-m">EXPLORE</a>
+                    <form action="#">
+                    <h2>Reservation Online</h2>
+
+                    <div class="form-floating">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+                        <label for="floatingInput">Your Name</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <!-- <div class="form-field">
+                        <select class="form-select" id="field" required>
+                        <option selected disabled value="">Choose your fields</option>
+                        <option>Tennis</option>
+                        <option>Football</option>
+                        <option>Basket</option>
+                        <option>Golf</option>
+                        </select>
+                        <div class="invalid-feedback">
+                        Please select a valid state.
+                        </div>
+                    </div> -->
+                    <div class="form-floating">
+                        <input type="date" name="email" class="form-control" id="date" placeholder="Date">
+                        <label for="floatingInput">Date</label>
+                    </div>
+                    
+                    <div class="form-field">
+                        <select class="form-select" id="vtime" required>
+                        <option selected disabled value="">Choose your time:</option>
+                        <option>08:00</option>
+                        <option>09:00</option>
+                        <option>10:00</option>
+                        <option>11:00</option>
+                        <option>12:00</option>
+                        <option>13:00</option>
+                        <option>14:00</option>
+                        <option>15:00</option>
+                        <option>16:00</option>
+                        <option>17:00</option>
+                        <option>18:00</option>
+                        <option>19:00</option>
+                        <option>20:00</option>
+                        <option>21:00</option>
+                        </select>
+                        <div class="invalid-feedback">
+                        Please select a valid state.
+                        </div>
+                    </div>
+                    <!-- <div class="form-field">
+                    <p>How many people?</p>
+                    <select name="select" id="#">
+                    <option value="1">1 person</option>
+                    <option value="2">2 persons</option>
+                    <option value="3">3 persosn</option>
+                    <option value="4">4 persons</option>
+                    <option value="5">5 persons</option>
+                    <option value="5+">5+ persons</option>
+                    </select>
+                    </div> -->
+
+                    <button class="w-100 btn btn-lg btn-danger mt-4" type="submit">Booking</button>
+                    </form>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                </div>
             </div>
-          </div>
-
-          <div class="image">
-            <img src="img/kids.png" alt="">
-            <div class="details">
-              <h2>KIDS</h2>
-              <a href="#" class="btn btn-dark btn-m">EXPLORE</a>
-            </div>
-          </div>
-
-          <div class="image">
-            <img src="img/aksesoris.png" alt="">
-            <div class="details">
-              <h2>ACCESSORIES</h2>
-              <a href="#" class="btn btn-dark btn-m">EXPLORE</a>
-            </div>
-          </div>
-
         </div>
-        <!--image row end-->
-      </div>
-      <!-- shop by category -->
+            
+      <!-- fields form -->
+      
+      <!-- slider -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/poster1.webp" class="d-block w-100" alt="...">
+              <a class="stretched-link" href="store.html"></a>
+            </div>
+            
+            <div class="carousel-item">
+              <img src="img/poster2.webp" class="d-block w-100" alt="...">
+              <a class="stretched-link" href="store.html"></a>
+            </div>
+  
+            <div class="carousel-item">
+              <img src="img/poster3.webp" class="d-block w-100" alt="...">
+              <a class="stretched-link" href="store.html"></a>
+            </div>
+  
+          </div>
+        </div>
+        <!-- end slider -->
 
-     <!-- best seller -->
+     <!-- booked again -->
      <div class="bs container mb-5 mt-3">
         <div class="col">
             <h2 class="text-start fs-3">Best Seller</h2>
@@ -215,101 +257,9 @@
 
         <!-- row1 -->
         </div>
-        <!-- best seller -->
-
-    <!-- brand -->
-    <div class="br container">
-        <div class="col">
-            <h2 class="text-start fs-3">Brand</h2>
-        </div>
-
-        <!-- row 1-->
-        <div class="row">
-            <!-- content -->
-                <div class="card2 ">
-                    <div class="product-1 align-items-center p-2 text-center">
-                        <img src="img/brand1.webp" alt="" class="rounded img-fluid" width="160">
-                        <a class="cart3 stretched-link" href="#"></a>
-                    </div>
-                </div>
-                <div class="card2 ">
-                    <div class="product-1 align-items-center p-2 text-center">
-                        <img src="img/brand1.webp" alt="" class="rounded img-fluid" width="160">
-                        <a class="cart3 stretched-link" href="#"></a>
-                    </div>
-                </div>
-                <div class="card2 ">
-                    <div class="product-1 align-items-center p-2 text-center">
-                        <img src="img/brand1.webp" alt="" class="rounded img-fluid" width="160">
-                        <a class="cart3 stretched-link" href="#"></a>
-                    </div>
-                </div>
-                <div class="card2 ">
-                    <div class="product-1 align-items-center p-2 text-center">
-                        <img src="img/brand1.webp" alt="" class="rounded img-fluid" width="160">
-                        <a class="cart3 stretched-link" href="#"></a>
-                    </div>
-                </div>
-                <div class="card2 ">
-                    <div class="product-1 align-items-center p-2 text-center">
-                        <img src="img/brand1.webp" alt="" class="rounded img-fluid" width="160">
-                        <a class="cart3 stretched-link" href="#"></a>
-                    </div>
-                </div>
-                <div class="card2 ">
-                    <div class="product-1 align-items-center p-2 text-center">
-                        <img src="img/brand1.webp" alt="" class="rounded img-fluid" width="160">
-                        <a class="cart3 stretched-link" href="#"></a>
-                    </div>
-                </div>
-        </div>
-            
-    <!-- end row1 -->
-        <!-- row 1-->
-        <div class="row">
-            <!-- content -->
-                <div class="card2 ">
-                    <div class="product-1 align-items-center p-2 text-center">
-                        <img src="img/brand1.webp" alt="" class="rounded img-fluid" width="160">
-                        <a class="cart3 stretched-link" href="#"></a>
-                    </div>
-                </div>
-                <div class="card2 ">
-                    <div class="product-1 align-items-center p-2 text-center">
-                        <img src="img/brand1.webp" alt="" class="rounded img-fluid" width="160">
-                        <a class="cart3 stretched-link" href="#"></a>
-                    </div>
-                </div>
-                <div class="card2 ">
-                    <div class="product-1 align-items-center p-2 text-center">
-                        <img src="img/brand1.webp" alt="" class="rounded img-fluid" width="160">
-                        <a class="cart3 stretched-link" href="#"></a>
-                    </div>
-                </div>
-                <div class="card2 ">
-                    <div class="product-1 align-items-center p-2 text-center">
-                        <img src="img/brand1.webp" alt="" class="rounded img-fluid" width="160">
-                        <a class="cart3 stretched-link" href="#"></a>
-                    </div>
-                </div>
-                <div class="card2 ">
-                    <div class="product-1 align-items-center p-2 text-center">
-                        <img src="img/brand1.webp" alt="" class="rounded img-fluid" width="160">
-                        <a class="cart3 stretched-link" href="#"></a>
-                    </div>
-                </div>
-                <div class="card2 ">
-                    <div class="product-1 align-items-center p-2 text-center">
-                        <img src="img/brand1.webp" alt="" class="rounded img-fluid" width="160">
-                        <a class="cart3 stretched-link" href="#"></a>
-                    </div>
-                </div>
-        </div>
-            
-    <!-- end row1 -->
+        <!-- booked again -->
 
         </div>
-    <!-- brand -->
 
     <div class="vos text-center mb-5">
         <a class="btn btn-outline-dark" href="/store">VISIT OUR STORE</a>

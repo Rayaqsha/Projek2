@@ -14,7 +14,7 @@ body {
 
 <div class="container">
 <div class="row justify-content-center mt-5 mb-5">
-<div class="col-5 card1">
+<div class="col-5 cardaut">
   <div class="card-body">
         <main class="form-registration">
           <form action="/register" method="POST">
