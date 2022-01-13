@@ -10,18 +10,9 @@
             <ul class="navbar-nav ms-auto">
               <li class="nav-item active">
                 <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#reservation" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Reservation
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="tennis.html">Tennis</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="basketball.html">Basketball</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="football.html">Football</a></li>
-                </ul>
+              </li>   
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="shop.html">Reservation</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="shop.html">Shop</a>

@@ -41,3 +41,5 @@ Route::get('/register', [RegisterController::class, 'index'])->name('register.in
 Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
 
 Route::get('/logout', [LogoutController::class, 'index'])->name('logout');
+
+Route::get('/shop', [ShopController::class, 'index'])->name('shop');
