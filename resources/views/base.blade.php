@@ -9,7 +9,7 @@
     @include('layouts/header')
 
     <main role="main" class="container">
-        @include('layouts/welcome')
+        <!-- @include('layouts/welcome') -->
 
         @yield('content')
     </main>

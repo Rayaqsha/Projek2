@@ -1,7 +1,21 @@
 @extends('base')
 @section('content')
-<div class="row justify-content-center mt-5">
-    <div class="col-lg-5">
+
+<style>
+body {
+    height:100%;
+    padding: 0;
+    margin: 0;
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+</style>
+
+<div class="container">
+<div class="row justify-content-center mt-5 mb-5">
+<div class="col-5 card1">
+  <div class="card-body">
         <main class="form-registration">
           <form action="/register" method="POST">
              @csrf
@@ -34,4 +48,8 @@
         </main>
     </div>
 </div>
+</div>
+</div>
+
+<br><br><br>
 @endsection

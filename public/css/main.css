@@ -11,6 +11,13 @@ body {
     margin-bottom: 60px;
 }
 
+.navbar-brand{
+    font-weight: 800;
+}
+.navbar a{
+    font-weight: 300;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -30,17 +37,13 @@ body {
   .form-login input{
       border-radius:0;
   }
-  .form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+  .card1 {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 10px 10px 10px rgba(53, 53, 53, 0.2);
+    border-radius: 15px;
   }
-  
-  .form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
+
 /* login */
 
 .form-registration input{
