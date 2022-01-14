@@ -31,9 +31,10 @@
 #carouselExampleIndicators{
     margin:30px 120px;
 }
+
 .carousel-caption{
     position:absolute;
-    margin-bottom:350px;
+    margin-bottom:150px;
 }
 .carousel-caption h5{
     font-size:32pt;
@@ -56,6 +57,72 @@
     color:white;
     border-width: 0;
 }
+.btnslider{
+    background-color: rgb(28, 28, 28);
+    border-width: 0;
+}
+.btnslider:hover{
+    background-color: rgb(77, 77, 77);
+}
+
+h3{
+    font-size: 32pt;
+    font-weight: 600;
+    font-family: 'poppins';
+}
+
+.aboutus{
+    padding: 60px 30px 60px 30px;
+    background-color: rgb(31, 31, 31);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.aboutus p{
+    font-weight: lighter;
+    text-align: justify;
+}
+/*** main container right */
+
+.main-container-right{
+    padding: 0 10px;
+}
+
+.main-container-right > h2{
+    font-family:'poppins';
+    padding: 0 0 15px 30px;
+}
+
+.main-container-right article{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 15px 0;
+    border-bottom: 1px solid #7ac64d;
+}
+
+.main-container-right article:last-child{
+    border-bottom: none;
+}
+
+.main-container-right img{
+    width: 100px;
+    height: 100px;
+    align-self: center;
+}
+
+.main-container-right h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+    align-self: center;
+}
+
+.main-container-right article h2{
+    font-size: 18px;
+    font-family: var(--heading);
+}
+
 /* category */
 h2{
     font-weight: 600;

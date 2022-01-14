@@ -9,19 +9,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item active">
-                <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+                <a class="nav-link" href="/home">Home</a>
               </li>   
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/reservation">Reservation</a>
+                <a class="nav-link" href="/shop">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/shop">Shop</a>
+                <a class="nav-link" href="/news">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/news">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#aboutus">About Us</a>
+                <a class="nav-link" href="#aboutus">About Us</a>
               </li>
              
             </ul>

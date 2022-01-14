@@ -9,7 +9,7 @@ use App\Http\Controllers\ShopController;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\BookingController;
-use App\Http\Controllers\ReservationController;
+use App\Http\Controllers\HomeController;
 
 
 /*
@@ -52,4 +52,4 @@ Route::get('/news', [NewsController::class, 'index'])->name('news');
 
 Route::get('/booking', [BookingController::class, 'index'])->name('booking');
 
-Route::get('/reservation', [ReservationController::class, 'index'])->name('reservation');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
