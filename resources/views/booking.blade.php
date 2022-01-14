@@ -1,58 +1,12 @@
 @extends('base')
 @section('content')
-
-      <!-- nav shop -->
-      <nav id="shopNav" class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="/shop">GPSHOP</a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navshop" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navshop">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link js-scroll-trigger" href="#">Football</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Basketball</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Tennis</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Golf</a>
-              </li>
-             
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Boxing</a>
-              </li>
-             
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Running</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/store"><span class="ourstore">Our Store</span></a>
-              </li>
-            </ul> 
-            </ul>
-            <form class="d-flex ms-auto">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-dark btn-sm" type="submit"><i class="bi bi-search"></i></button>
-              </form>
-          </div>
-        </div>
-        </div>
-      </nav>
-      <br> <br>
-      <!-- nav shop -->
-
       
       <!-- fields form  -->
 
-      <div class="container">
+      <div class="containerform">
       <div class="row mt-5 mb-5">
             <div class="col">
-                <img src="img/store/tas.png" alt="" class="rounded img-fluid w-100">
+                <img src="img/lapangan/basket.jpg" alt="" class="rounded img-fluid w-100">
             </div>
             <div class="col">
                 <div class="cardbook">
@@ -60,7 +14,7 @@
                 <div class="container">
 
                     <form action="#">
-                    <h2>Reservation Online</h2>
+                    <h2 class="mb-3">Reservation Online</h2>
 
                     <div class="form-floating">
                         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
@@ -83,12 +37,12 @@
                         </div>
                     </div> -->
                     <div class="form-floating">
-                        <input type="date" name="email" class="form-control" id="date" placeholder="Date">
+                        <input type="date" name="date" class="form-control" id="date" placeholder="Date">
                         <label for="floatingInput">Date</label>
                     </div>
                     
                     <div class="form-field">
-                        <select class="form-select" id="vtime" required>
+                        <select class="form-select" id="time" required>
                         <option selected disabled value="">Choose your time:</option>
                         <option>08:00</option>
                         <option>09:00</option>
@@ -164,98 +118,39 @@
      <!-- booked again -->
      <div class="bs container mb-5 mt-3">
         <div class="col">
-            <h2 class="text-start fs-3">Best Seller</h2>
+            <h2 class="text-center mb-3">More Fields</h2>
         </div>
         <!-- row1 -->
-        <div class="bs1 row">
-
-                <div class="card1 mt-5 align-items-center p-2 text-center">
-                        <img src="img/store/tas.png" alt="" class="rounded img-fluid" width="160">
-                        <h5>Bag</h5>
-                        <div class="card-body">
-                            <span class="text1 d-block">Lorem, ipsum dolor</span>
-                            <div class="cost mt-3 text-dark">
-                                <span>$59.99</span>
-                                <div class="star mt-3 align-items-center">
-                                    <i class="star bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                                <div class="p-3 cart text-center text-white mt-3 cursor">
-                                    <a class="cart3 stretched-link" href="https://wa.me/087887348391"><span class="text-uppercase text-light">add to cart</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                <div class="card1 mt-5 align-items-center p-2 text-center">
-                        <img src="img/store/bajuvoli.png" alt="" class="rounded img-fluid" width="160">
-                        <h5>Volley Jersey</h5>
-                        <div class="card-body">
-                            <span class="text1 d-block">Lorem, ipsum dolor</span>
-                            <div class="cost mt-3 text-dark">
-                                <span>$50.99</span>
-                                <div class="star mt-3 align-items-center">
-                                    <i class="star bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                                <div class="p-3 cart text-center text-white mt-3 cursor">
-                                    <a class="cart3 stretched-link" href="https://wa.me/087887348391"><span class="text-uppercase text-light">add to cart</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                <div class="card1 mt-5 align-items-center p-2 text-center">
-                        <img src="img/store/tumblr.png" alt="" class="rounded img-fluid" width="160">
-                        <h5>Blue Tumblr</h5>
-                        <div class="card-body">
-                            <span class="text1 d-block">Lorem, ipsum dolor</span>
-                            <div class="cost mt-3 text-dark">
-                                <span>$49.99</span>
-                                <div class="star mt-3 align-items-center">
-                                    <i class="star bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                                <div class="p-3 cart text-center text-white mt-3 cursor">
-                                    <a class="cart3 stretched-link" href="https://wa.me/087887348391"><span class="text-uppercase text-light">add to cart</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                <div class="card1 mt-5 align-items-center p-2 text-center">
-                        <img src="img/store/topi.png" alt="" class="rounded img-fluid" width="160">
-                        <h5>Hat Sports</h5>
-                        <div class="card-body">
-                            <span class="text1 d-block">Lorem, ipsum dolor</span>
-                            <div class="cost mt-3 text-dark">
-                                <span>$49.99</span>
-                                <div class="star mt-3 align-items-center">
-                                    <i class="star bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                                <div class="p-3 cart text-center text-white mt-3 cursor">
-                                    <a class="cart3 stretched-link" href="https://wa.me/087887348391"><span class="text-uppercase text-light">add to cart</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-        <!-- row1 -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+        <div class="col">
+            <div class="card">
+            <img src="img/lapangan/tennis.jpg" class="card-img-top w-80" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Tennis Fields</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" type="submit">Booking</button>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="img/lapangan/football.jpg" class="card-img-top w-80" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Football Fields</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" type="submit">Booking</button>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="img/lapangan/golf.jpg" class="card-img-top w-80" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Golf Fields</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" type="submit">Booking</button>
+            </div>
+            </div>
         </div>
         <!-- booked again -->
 
@@ -264,5 +159,6 @@
     <div class="vos text-center mb-5">
         <a class="btn btn-outline-dark" href="/store">VISIT OUR STORE</a>
     </div>
+
 
     @endsection
