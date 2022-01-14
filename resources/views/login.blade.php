@@ -16,7 +16,6 @@ body {
 <div class="col-5 cardaut">
   <div class="card-body">
     <main class="form-login">
-          <form>
             <h1 class="h3 mb-3 fw-normal text-center">Login</h1>
 
             @if ($errors->any())
@@ -46,11 +45,11 @@ body {
                 @csrf
         
             <div class="form-floating">
-                <input type="email" class="form-control rounded-top" id="floatingInput" placeholder="Enter your email">
+                <input value="{{ old('email') }}" name="email" type="email"  class="form-control rounded-top" id="floatingInput" placeholder="Enter your email">
                 <label for="floatingInput">Email address</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control rounded-bottom" id="floatingPassword" placeholder="Enter your password">
+                <input value="{{ old('password') }}" name="password" type="password" class="form-control rounded-bottom" id="floatingPassword" placeholder="Enter your password">
                 <label for="floatingPassword">Password</label>
             </div>
         
