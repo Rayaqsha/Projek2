@@ -31,7 +31,31 @@
 #carouselExampleIndicators{
     margin:30px 120px;
 }
+.carousel-caption{
+    position:absolute;
+    margin-bottom:350px;
+}
+.carousel-caption h5{
+    font-size:32pt;
+    font-weight: bolder;
+}
+.tible{
+    font-family: 'Poppins';
+}
+.schedule{
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: rgb(39, 39, 39);
+}
 
+.form-control1{
+    border-radius: none;
+    background-color: transparent;
+    color:white;
+    border-width: 0;
+}
 /* category */
 h2{
     font-weight: 600;
@@ -104,6 +128,7 @@ h2{
 	transform: translateY(-10px);
 }
 /* category */
+
 
 /* bestseller */
 .bs{
