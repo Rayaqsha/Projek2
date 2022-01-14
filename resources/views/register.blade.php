@@ -20,6 +20,19 @@ body {
           <form action="/register" method="POST">
              @csrf
             <h1 class="h3 mb-3 fw-normal text-center">Registration form</h1>
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            <form action="{{ route('register.store') }}" method="POST">
+                @method("POST")
+                @csrf
         
             <div class="form-floating">
                 <input type="text" name="name" class="form-control rounded-top" id="name" placeholder="Name">
