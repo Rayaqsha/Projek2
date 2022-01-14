@@ -1,5 +1,65 @@
 @extends('base')
 @section('content')
+
+      <!-- nav shop -->
+      <nav id="shopNav" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="/shop">GPSHOP</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navshop" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navshop">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link js-scroll-trigger" href="#">Football</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#">Basketball</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#">Tennis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#">Golf</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#">Boxing</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#">Running</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="/store"><span class="ourstore">Our Store</span></a>
+              </li>
+            </ul> 
+            </ul>
+            <form class="d-flex ms-auto">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark btn-sm" type="submit"><i class="bi bi-search"></i></button>
+              </form>
+          </div>
+        </div>
+        </div>
+      </nav>
+      <br> <br>
+      <!-- nav shop -->
+      <h1 class="mb-4">What Da {{ Session::get('name') }} Doin?!</h1>
+      
+
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+
+            @if (session('error'))
+                <div class="alert alert-danger">
+                    {{ session('error') }}
+                </div>
+            @endif
+
       
       <!-- fields form  -->
 

@@ -26,11 +26,12 @@ class LoginController extends Controller
      */
     public function store(Request $request)
     {
+        
         $request->validate([
             'email' => 'required',
             'password' => 'required',
         ]);
-        
+        // dd($request);
         $user = User::where('email', $request->email)->first();
         
         if(!$user) {
@@ -43,9 +44,10 @@ class LoginController extends Controller
         
         $request->session()->put('id', $user->id);
         $request->session()->put('name', $user->name);
+        $request->session()->put('username', $user->username);
         $request->session()->put('email', $user->email);
         $request->session()->put('is_logged_in', true);
 
-        return redirect()->route('index')->with('success', "Howdy, " . $user->name . "!");
+        return redirect()->route('booking')->with('success', "Get Healthy, " . $user->name . "!");
     }
 }
