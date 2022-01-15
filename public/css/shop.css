@@ -57,6 +57,9 @@
     color:white;
     border-width: 0;
 }
+.form-control1 option{
+    color: rgb(28, 28, 28);
+}
 .btnslider{
     background-color: rgb(28, 28, 28);
     border-width: 0;
