@@ -8,8 +8,12 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\NewsController;
-use App\Http\Controllers\BookingController;
+use App\Http\Controllers\BookingbasketController;
+use App\Http\Controllers\BookingfootballController;
+use App\Http\Controllers\BookingtennisController;
+use App\Http\Controllers\BookinggolfController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CobaController;
 
 
 /*
@@ -50,6 +54,10 @@ Route::get('/shop', [ShopController::class, 'index'])->name('shop');
 Route::get('/store', [StoreController::class, 'index'])->name('store');
 Route::get('/news', [NewsController::class, 'index'])->name('news');
 
-Route::get('/booking', [BookingController::class, 'index'])->name('booking');
+Route::get('/bookingtennis', [BookingtennisController::class, 'index'])->name('bookingtennis');
+Route::get('/bookingfootball', [BookingfootballController::class, 'index'])->name('bookingfootball');
+Route::get('/bookingbasket', [BookingbasketController::class, 'index'])->name('bookingbasket');
+Route::get('/bookinggolf', [BookinggolfController::class, 'index'])->name('bookinggolf');
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/coba', [CobaController::class, 'index'])->name('coba');

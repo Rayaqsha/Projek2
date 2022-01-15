@@ -103,7 +103,7 @@
             <div class="card-body">
                 <h5 class="card-title">Tennis Fields</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/booking" type="submit">Booking</a>
+                <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookingtennis" type="submit">Booking</a>
             </div>
             </div>
         </div>
@@ -113,7 +113,7 @@
             <div class="card-body">
                 <h5 class="card-title">Football Fields</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/booking" type="submit">Booking</a>
+                <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookingfootball" type="submit">Booking</a>
             </div>
             </div>
         </div>
@@ -123,7 +123,7 @@
             <div class="card-body">
                 <h5 class="card-title">Golf Fields</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/booking" type="submit">Booking</a>
+                <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookinggolf" type="submit">Booking</a>
             </div>
             </div>
         </div>
@@ -133,7 +133,7 @@
             <div class="card-body">
                 <h5 class="card-title">Basketball Fields</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/booking" type="submit">Booking</a>
+                <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookingbasket" type="submit">Booking</a>
             </div>
             </div>
         </div>

@@ -1,51 +1,7 @@
 @extends('base')
 @section('content')
 
-      <!-- nav shop -->
-      <nav id="shopNav" class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="/shop">GPSHOP</a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navshop" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navshop">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link js-scroll-trigger" href="#">Football</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Basketball</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Tennis</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Golf</a>
-              </li>
-             
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Boxing</a>
-              </li>
-             
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Running</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/store"><span class="ourstore">Our Store</span></a>
-              </li>
-            </ul> 
-            </ul>
-            <form class="d-flex ms-auto">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-dark btn-sm" type="submit"><i class="bi bi-search"></i></button>
-              </form>
-          </div>
-        </div>
-        </div>
-      </nav>
-      <br> <br>
-      <!-- nav shop -->
-      <h1 class="mb-4">What Da {{ Session::get('name') }} Doin?!</h1>
+      <h1 class="mt-4 mb-4">What Da {{ Session::get('name') }} Doin?!</h1>
       
 
             @if (session('success'))
@@ -66,7 +22,7 @@
       <div class="containerform">
       <div class="row mt-5 mb-5">
             <div class="col">
-                <img src="img/lapangan/basket.jpg" alt="" class="rounded img-fluid w-100">
+            <img src="img/lapangan/football.jpg" class="w-100" alt="">
             </div>
             <div class="col">
                 <div class="cardbook">
@@ -188,17 +144,17 @@
             <div class="card-body">
                 <h5 class="card-title">Tennis Fields</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <button class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" type="submit">Booking</button>
+                <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookingltennis" type="submit">Booking</a>
             </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
-            <img src="img/lapangan/football.jpg" class="card-img-top w-80" alt="...">
+            <img src="img/lapangan/basket.jpg" class="card-img-top w-80" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Football Fields</h5>
+                <h5 class="card-title">Basketball Fields</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <button class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" type="submit">Booking</button>
+                <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookingbasket" type="submit">Booking</a>
             </div>
             </div>
         </div>
@@ -208,17 +164,12 @@
             <div class="card-body">
                 <h5 class="card-title">Golf Fields</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <button class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" type="submit">Booking</button>
+                <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookinggolf" type="submit">Booking</a>
             </div>
             </div>
         </div>
         <!-- booked again -->
 
         </div>
-
-    <div class="vos text-center mb-5">
-        <a class="btn btn-outline-dark" href="/store">VISIT OUR STORE</a>
-    </div>
-
 
     @endsection
