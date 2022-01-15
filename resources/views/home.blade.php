@@ -54,7 +54,7 @@
             <div class="d-flex col justify-content-center">
 
             <select class="form-control1 col-2" id="fields" required>
-            <option selected disabled value="">Fields:</option>
+            <option class="filter" selected disabled value="">Fields:</option>
             <option>Tennis</option>
             <option>Football</option>
             <option>Golf</option>
