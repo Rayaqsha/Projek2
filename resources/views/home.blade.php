@@ -83,7 +83,7 @@
                 <th scope="col">Date</th>
                 <th scope="col">Time</th>
                 <th scope="col">Name</th>
-                <th scope="col">Email</th>
+                <th scope="col">Fields</th>
                 </tr>
             </thead>
             <tbody>
@@ -92,7 +92,7 @@
                         <td>{{ $r->DateReserv }}</td>
                         <td>{{ $r->DateReserv }}</td>
                         <td>{{ $r->username }}</td>
-                        <td>{{ $r->email }}</td>
+                        <td>{{ $r->FieldsID }}</td>
 
                 </tr>
                 @endforeach

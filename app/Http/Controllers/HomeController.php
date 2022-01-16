@@ -19,6 +19,7 @@ class HomeController extends Controller
     {
         $reservation = DB::table('reservation')
         ->join('users','users.id','=','reservation.UserId')
+        ->orderby('reservation.FieldsID')
         // ->where('reservation.DateReserv', 'LIKE', 'date%')
         ->get();
         // dump();

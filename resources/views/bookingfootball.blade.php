@@ -1,7 +1,7 @@
 @extends('base')
 @section('content')
 
-      <h1 class="mt-4 mb-4">What Da {{ Session::get('name') }} Doin?!</h1>
+      <h1 class="mt-4 mb-4">What Da {{ Session::get('FieldsID') }} Doin?!</h1>
       
 
             @if (session('success'))
@@ -29,16 +29,18 @@
                 <div class="card-body">
                 <div class="container">
 
-                    <form action="#">
+                    <form action="{{ route('store') }}" method="POST">
+                @method('POST')
+                {{ csrf_field() }}
                     <h2 class="mb-3">Reservation Online</h2>
 
                     <div class="form-floating">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
-                        <label for="floatingInput">Your Name</label>
+                        <input type="text" name="name" value="{{ Session::get('id') }}" class="form-control" id="name"  >
+                        <label for="floatingInput">{{ Session::get('name') }}</label>
                     </div>
                     <div class="form-floating">
-                        <input type="email" name="email" class="form-control" id="email" placeholder="Email">
-                        <label for="floatingInput">Email</label>
+                        <input type="text" name="FieldsID" value="football" class="form-control" id="FieldsID"  >
+                        <label for="floatingInput"></label>
                     </div>
                     <!-- <div class="form-field">
                         <select class="form-select" id="field" required>
@@ -58,7 +60,7 @@
                     </div>
                     
                     <div class="form-field">
-                        <select class="form-select" id="time" required>
+                        <select class="form-select" name="time" id="time" required>
                         <option selected disabled value="">Choose your time:</option>
                         <option>08:00</option>
                         <option>09:00</option>

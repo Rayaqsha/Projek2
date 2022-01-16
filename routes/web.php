@@ -32,14 +32,23 @@ Route::get('/', function () {
 });
 
 Route::middleware(['check'])->group(function() {
-    Route::get('/hello', [HelloController::class, 'index']);
-    Route::get('/todo', [TodoController::class, 'index'])->name('index');
-    Route::get('/todo/create', [TodoController::class, 'create'])->name('create');
-    Route::post('/todo', [TodoController::class, 'store'])->name('store');
-    Route::get('/todo/{id}', [TodoController::class, 'edit'])->name('edit');
-    Route::get('/todo/{id}/done', [TodoController::class, 'done'])->name('done');
-    Route::put('/todo/{id}', [TodoController::class, 'update'])->name('update');
-    Route::delete('/todo/{id}', [TodoController::class, 'destroy'])->name('destroy');    
+    Route::get('/bookingtennis', [BookingtennisController::class, 'index'])->name('bookingtennis');
+Route::get('/bookingfootball', [BookingfootballController::class, 'index'])->name('bookingfootball.index');
+Route::get('/bookingbasket', [BookingbasketController::class, 'index'])->name('bookingbasket');
+Route::get('/bookinggolf', [BookinggolfController::class, 'index'])->name('bookinggolf');
+Route::post('/bookingtennis', [BookingtennisController::class, 'store'])->name('bookingtennis');
+// Route::post('/bookingfootball', [BookingfootballController::class, 'store'])->name('bookingfootball.store');
+Route::post('/bookingfootball', [BookingfootballController::class, 'store'])->name('bookingfootball.store');
+Route::post('/bookingbasket', [BookingbasketController::class, 'index'])->name('bookingbasket');
+Route::post('/bookinggolf', [BookinggolfController::class, 'index'])->name('bookinggolf');
+    // Route::get('/hello', [HelloController::class, 'index']);
+    // Route::get('/todo', [TodoController::class, 'index'])->name('index');
+    // Route::get('/todo/create', [TodoController::class, 'create'])->name('create');
+    // Route::post('/todo', [TodoController::class, 'store'])->name('store');
+    // Route::get('/todo/{id}', [TodoController::class, 'edit'])->name('edit');
+    // Route::get('/todo/{id}/done', [TodoController::class, 'done'])->name('done');
+    // Route::put('/todo/{id}', [TodoController::class, 'update'])->name('update');
+    // Route::delete('/todo/{id}', [TodoController::class, 'destroy'])->name('destroy');    
 });
 
 Route::get('/login', [LoginController::class, 'index'])->name('login.index');
@@ -54,10 +63,7 @@ Route::get('/shop', [ShopController::class, 'index'])->name('shop');
 Route::get('/store', [StoreController::class, 'index'])->name('store');
 Route::get('/news', [NewsController::class, 'index'])->name('news');
 
-Route::get('/bookingtennis', [BookingtennisController::class, 'index'])->name('bookingtennis');
-Route::get('/bookingfootball', [BookingfootballController::class, 'index'])->name('bookingfootball');
-Route::get('/bookingbasket', [BookingbasketController::class, 'index'])->name('bookingbasket');
-Route::get('/bookinggolf', [BookinggolfController::class, 'index'])->name('bookinggolf');
+
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/coba', [CobaController::class, 'index'])->name('coba');

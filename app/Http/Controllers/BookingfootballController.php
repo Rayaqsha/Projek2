@@ -12,4 +12,20 @@ class BookingfootballController extends Controller
     {
         return view('bookingfootball');
     }
+
+    public function store(Request $request)
+    {
+	DB::table('reservation')->insert([
+		'UserId' => $request->name,
+		'FieldsID' => $request->FieldsID,
+		'DateReserv' => $request->date 
+        // 'DateReserv' => $request->time
+		
+	]);
+    
+	
+	return redirect('/home');
+    dd($request);
+ 
+    }
 }
