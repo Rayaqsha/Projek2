@@ -64,8 +64,8 @@
 
             <div class="d-flex col justify-content-center">
 
-                <select class="form-control1 col-2" id="fields" style="color:black" required>
-                <option selected disabled value="" style="color:white" label="Fields"></option>
+                <select class="form-control1 col-2" id="fields" required>
+                <option selected disabled value="" label="Fields"></option>
                 <option>Tennis</option>
                 <option>Football</option>
                 <option>Golf</option>

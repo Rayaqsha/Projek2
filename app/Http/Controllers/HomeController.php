@@ -19,10 +19,10 @@ class HomeController extends Controller
     {
         $reservation = DB::table('reservation')
         ->join('users','users.id','=','reservation.UserId')
-        ->where('reservation.DateReserv', 'LIKE', 'date%')
+        // ->where('reservation.DateReserv', 'LIKE', 'date%')
         ->get();
         // dump();
-        dd($reservation);
+        // dd($reservation);
 
         
 
