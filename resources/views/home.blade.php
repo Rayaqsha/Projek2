@@ -1,6 +1,17 @@
 @extends('base')
 @section('content')
 
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+
+            @if (session('error'))
+                <div class="alert alert-danger">
+                    {{ session('error') }}
+                </div>
+            @endif
     <!-- slider -->
     <div class="overlay"></div>
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -61,8 +72,9 @@
             <option>Basketball</option>
             </select>
 
-            <input type="date" name="date" class="form-control1 col-2 ml-3" id="date" placeholder="Date">
+                <input type="date" name="date" class="form-control1 col-2 ml-3" id="date" placeholder="Date">
             </div>
+
         </div>
         <!-- table -->
         <table class="table table-dark table-striped table-hover mt-4">
@@ -75,13 +87,15 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach($reservation as $r)
                  <tr>
-                        <td>27/07/2022</td>
-                        <td>09:00</td>
-                        <td>Abraham Lincoln</td>
-                        <td>abraham@anjay.com</td>
+                        <td>{{ $r->DateReserv }}</td>
+                        <td>{{ $r->DateReserv }}</td>
+                        <td>{{ $r->username }}</td>
+                        <td>{{ $r->email }}</td>
 
                 </tr>
+                @endforeach
             </tbody>
             </table>
 

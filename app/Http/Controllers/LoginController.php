@@ -48,6 +48,6 @@ class LoginController extends Controller
         $request->session()->put('email', $user->email);
         $request->session()->put('is_logged_in', true);
 
-        return redirect()->route('booking')->with('success', "Get Healthy, " . $user->name . "!");
+        return redirect()->route('home')->with('success', "Get Healthy, " . $user->name . "!");
     }
 }
