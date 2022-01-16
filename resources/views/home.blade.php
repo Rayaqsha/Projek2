@@ -24,7 +24,7 @@
             <div class="carousel-item active">
             <img src="img/lapangan/slider1.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Online Reservation Booking</h5>
+                <h8>Online Reservation Booking</h8>
                 <p>Some representative placeholder content for the first slide.</p>
                 <button class="btnslider btn btn-lg btn-dark mt-1 stretched-link rounded-pill" type="submit">Booking Now</button>
             </div>
@@ -32,7 +32,7 @@
             <div class="carousel-item">
             <img src="img/lapangan/slider2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Online Reservation Booking</h5>
+                <h8>Online Reservation Booking</h8>
                 <p>Some representative placeholder content for the second slide.</p>
                 <button class="btnslider btn btn-lg btn-dark mt-1 stretched-link rounded-pill" type="submit">Booking Now</button>
             </div>
@@ -40,7 +40,7 @@
             <div class="carousel-item">
             <img src="img/lapangan/bg2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Online Reservation Booking</h5>
+                <h8>Online Reservation Booking</h8>
                 <p>Some representative placeholder content for the third slide.</p>
                 <button class="btnslider btn btn-lg btn-dark mt-1 stretched-link rounded-pill" type="submit">Booking Now</button>
             </div>
@@ -64,13 +64,13 @@
 
             <div class="d-flex col justify-content-center">
 
-                <select class="form-control1 col-2" id="fields" required>
-                <option selected disabled value="" label="Fields"></option>
-                <option>Tennis</option>
-                <option>Football</option>
-                <option>Golf</option>
-                <option>Basketball</option>
-                </select>
+            <select class="form-control1 col-2" id="fields" required>
+            <option class="filter" selected disabled value="">Fields:</option>
+            <option>Tennis</option>
+            <option>Football</option>
+            <option>Golf</option>
+            <option>Basketball</option>
+            </select>
 
                 <input type="date" name="date" class="form-control1 col-2 ml-3" id="date" placeholder="Date">
             </div>
@@ -116,6 +116,7 @@
             <img src="img/lapangan/tennis.jpg" class="card-img-top w-80" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Tennis Fields</h5>
+                <h6 class="fs-6 text-danger">Rp. 80.000/hour</h6>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookingtennis" type="submit">Booking</a>
             </div>
@@ -126,6 +127,7 @@
             <img src="img/lapangan/football.jpg" class="card-img-top w-80" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Football Fields</h5>
+                <h6 class="fs-6 text-danger">Rp. 150.000/hour</h6>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookingfootball" type="submit">Booking</a>
             </div>
@@ -136,6 +138,7 @@
             <img src="img/lapangan/golf.jpg" class="card-img-top w-80" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Golf Fields</h5>
+                <h6 class="fs-6 text-danger">Rp. 100.000/hour</h6>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookinggolf" type="submit">Booking</a>
             </div>
@@ -146,6 +149,7 @@
             <img src="img/lapangan/basket.jpg" class="card-img-top w-80" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Basketball Fields</h5>
+                <h6 class="fs-6 text-danger">Rp. 50.000/hour</h6>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookingbasket" type="submit">Booking</a>
             </div>
