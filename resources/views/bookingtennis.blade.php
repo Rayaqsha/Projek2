@@ -143,6 +143,7 @@
             <img src="img/lapangan/basket.jpg" class="card-img-top w-80" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Basketball Fields</h5>
+                <h6 class="fs-6 text-danger">Rp. 50.000/hour</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookingbasket" type="submit">Booking</a>
             </div>
@@ -153,6 +154,7 @@
             <img src="img/lapangan/football.jpg" class="card-img-top w-80" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Football Fields</h5>
+                <h6 class="fs-6 text-danger">Rp. 150.000/hour</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookingfootball" type="submit">Booking</a>
             </div>
@@ -163,6 +165,7 @@
             <img src="img/lapangan/golf.jpg" class="card-img-top w-80" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Golf Fields</h5>
+                <h6 class="fs-6 text-danger">Rp. 100.000/hour</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <a class="w-30 btn btn-md btn-outline-danger mt-1 stretched-link" href="/bookinggolf" type="submit">Booking</a>
             </div>

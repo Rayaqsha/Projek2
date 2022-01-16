@@ -36,7 +36,8 @@
     position:absolute;
     margin-bottom:150px;
 }
-.carousel-caption h5{
+.carousel-caption h8{
+    color: blanchedalmond;
     font-size:32pt;
     font-weight: bolder;
 }
@@ -60,6 +61,15 @@
 
 .form-control1 option{
     color: rgb(33, 33, 33);
+}
+
+h5{
+    color: rgb(19, 19, 19);
+    font-weight: bold;
+}
+
+h6{
+    font-weight: 700;
 }
 
 .btnslider{
