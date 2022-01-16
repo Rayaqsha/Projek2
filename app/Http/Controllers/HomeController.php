@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -16,6 +17,13 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('home');
+        $reservation = DB::table('reservation')
+        ->join('users','users.id','=','reservation.UserId')
+        // ->select(DB::raw('RIGHT(DateReserv,5)'))
+        ->get();
+
+        
+
+        return view('home', ['reservation' => $reservation]);
     }
 }
